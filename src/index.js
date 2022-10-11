@@ -53,6 +53,7 @@ console.log(new Szazlabu(100).toString());
 let szazlabuszamtomb = [10, 15 , 20 , 25 , 30];
 
 
+
 function labakbolSzazlabuk(randomtomb){
  
     let szazlabutomb = [];
