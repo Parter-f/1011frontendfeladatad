@@ -1,3 +1,14 @@
+
+class Szazlabu
+{
+constructor(labakSzama){
+this.labakSzama = labakSzama;
+}
+toString(){
+    return(this.labakSzama + " lábú százlábú");
+}
+}
+
 document.addEventListener('DOMContentLoaded' , ()=>{
     let tomb = [];
     for(let i = 0 ; i < 20 ; i++)
@@ -37,7 +48,5 @@ document.getElementById('hozzaad').addEventListener('click' , () =>
 
 })
 
-
-})
-
-
+console.log(Szazlabu = new Szazlabu(100).toString());
+});
