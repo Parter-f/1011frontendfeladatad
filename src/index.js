@@ -29,6 +29,13 @@ document.getElementById('gomb').addEventListener('click' , ()=>{
 
 })
 
+document.getElementById('hozzaad').addEventListener('click' , () =>
+{
+
+    tomb.push(parseInt(document.getElementById('number').value))
+    console.log(tomb);
+
+})
 
 
 })
