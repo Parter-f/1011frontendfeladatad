@@ -48,5 +48,39 @@ document.getElementById('hozzaad').addEventListener('click' , () =>
 
 })
 
-console.log(Szazlabu = new Szazlabu(100).toString());
+console.log(new Szazlabu(100).toString());
+
+let szazlabuszamtomb = [10, 15 , 20 , 25 , 30];
+
+
+function labakbolSzazlabuk(randomtomb){
+ 
+    let szazlabutomb = [];
+    randomtomb.forEach(element => {
+        let rovar = new Szazlabu(element);
+        szazlabutomb.push(rovar);
+    });
+    return(szazlabutomb);
+}
+labakbolSzazlabuk(szazlabuszamtomb);
+
+
+function szazlabuMejelenites(bekertomb , idbeker){
+
+let szazlabuak = labakbolSzazlabuk(bekertomb);
+let e = document.createElement(idbeker);
+
+szazlabuak.forEach(element => {
+    let li = document.createElement('li');
+
+        li.innerHTML = element.toString();
+
+        e.appendChild(li);
+
+        document.body.appendChild(e);
+
+});
+}
+szazlabuMejelenites(szazlabuszamtomb , 'ul')
+
 });
